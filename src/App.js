@@ -1,25 +1,34 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
 import './App.css';
+import axios from 'axios';
+import Header from './components/ui/Header';
+import CharacterGrid from './components/characters/CharacterGrid';
 
-function App() {
+
+
+const App = () => {
+  
+  const [profile, setProfile] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchItem = async () => {
+      const result = await axios(`https://members-api.parliament.uk/api/Members/Search?House=1&IsEligible=true&IsCurrentMember=true&skip=0`) 
+      console.log(result.data);
+      setProfile(result.data)
+      
+      setIsLoading(false)
+    }
+    
+    fetchItem();
+  }, [])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Header />
+      <CharacterGrid isLoading={isLoading} profile={profile} />
     </div>
   );
 }
+
 
 export default App;
