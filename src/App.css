@@ -12,9 +12,7 @@ body {
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
 }
-.mybgcolor {background-color:#373151; } 
-.myforecolor {color:#373151; }
-.mybordercolor {border:3px solid #373151; }
+
 a {
   text-decoration: none;
 }
@@ -25,15 +23,31 @@ a {
   padding: 0 20px;
 }
 
+.footer {
+  max-width: 1100px;
+  margin: 50px 0;
+  padding: 30px 20px;
+  
+}
+
 .btn {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  margin: 0px 0 10px;
+  border: none;
+  cursor: pointer;
+  padding: 50px 0;
+}
+
+.btn > button {
+  border-style: none;
+  padding: 5px 32px;
+  margin-right: 10px;
+  border-radius: 5px;
+  background: #EDEBEA;
   color: #fff;
-  background-color: #3fb573;
   font-size: 1em;
-  text-align: center;
-  padding: 10px 15px;
-  border: 0;
-  margin: 10px 0;
+  color: #373151
 }
 
 header {
@@ -80,7 +94,7 @@ input[type='text'] {
 
 .card h1 {
   font-size: 25px;
-  border-bottom: 1px #fff solid;
+  border-bottom: 1px #e9e8eb solid;
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
@@ -113,8 +127,8 @@ input[type='text'] {
 }
 
 .card-back {
-  background-color: #333;
-  color: white;
+  background-color: rgb(94, 93, 93);
+  color: #e9e8eb;
   padding: 20px;
   transform: rotateY(180deg);
 }

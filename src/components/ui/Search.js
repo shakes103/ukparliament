@@ -16,7 +16,7 @@ const onChange = (q) => {
                 <input
                 type='text'
                 className='form-control'
-                placeholder='Search for Member of Parliament'
+                placeholder='Search for Member of House of Commons using Surname'
                 value={text}
                 onChange={(e) => onChange(e.target.value)}
                 autoFocus
