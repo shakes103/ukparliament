@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# UK Members of Parliament App
+
+React project that uses the [UK Parliament Members API](https://members-api.parliament.uk/index.html) to show and filter current serving members in the House of Commons.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
