@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ukparliament/static/css/main.4530ef68.css",
+    "main.js": "/ukparliament/static/js/main.664895ff.js",
+    "static/media/transparent-logo.png": "/ukparliament/static/media/transparent-logo.1c2b1586a961c0807e9c.png",
+    "static/media/spinner.gif": "/ukparliament/static/media/spinner.429b286567e28c6071bb.gif",
+    "index.html": "/ukparliament/index.html",
+    "main.4530ef68.css.map": "/ukparliament/static/css/main.4530ef68.css.map",
+    "main.664895ff.js.map": "/ukparliament/static/js/main.664895ff.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4530ef68.css",
+    "static/js/main.664895ff.js"
+  ]
+}
